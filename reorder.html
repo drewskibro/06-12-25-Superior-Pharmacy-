@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Reorder Your Medication | Superior Pharmacy</title>
+    <meta name="description" content="Reorder your Wegovy or Mounjaro prescription in 90 seconds. Priority processing for existing patients. Delivered tomorrow." />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="reorder.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gray0-white": "var(--gray0-white)",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/cropped-superior-1.png" alt="Superior Pharmacy Logo" class="logo" />
+        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="weight-management.html">Weight Management</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              Treatments
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="reorder.html" aria-current="page">Reorder Medication</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </div>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        
+        <button class="cta-button primary-cta desktop-cta" aria-label="Start your assessment" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+          Start Your Assessment
+          <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+        </button>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+      
+      <div class="mobile-menu">
+        <div class="mobile-menu-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="weight-management.html">Weight Management</a>
+          <details class="mobile-dropdown">
+            <summary>Treatments</summary>
+            <div class="mobile-dropdown-content">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="reorder.html" aria-current="page">Reorder Medication</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </details>
+          <a href="contact.html">Contact Us</a>
+          <button class="cta-button primary-cta mobile-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+            Start Your Assessment
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="reorder-hero-section">
+      <div class="reorder-hero-container">
+        <div class="reorder-hero-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>EXISTING PATIENT</span>
+        </div>
+        
+        <h1>Welcome Back<br />Reorder in Minutes</h1>
+        <p class="reorder-hero-subtitle">Continue your journey with ease. Quick reorder process, fast delivery, and ongoing support from our pharmacist team.</p>
+        
+        <div class="reorder-hero-stats">
+          <div class="reorder-hero-stat">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>Quick reorder process</span>
+          </div>
+          <div class="reorder-hero-stat">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 16V12L16 14M21 10H3M21 6H3M21 14H3M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>Fast delivery</span>
+          </div>
+          <div class="reorder-hero-stat">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Expert pharmacist support</span>
+          </div>
+          <div class="reorder-hero-stat">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Flexible options</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Selection Section -->
+    <section class="reorder-products-section">
+      <div class="section-container">
+        <div class="reorder-products-header">
+          <h2>Which medication are you reordering?</h2>
+          <p>Select your current treatment to continue your journey</p>
+        </div>
+        
+        <div class="reorder-products-grid">
+          <!-- Wegovy Card -->
+          <article class="reorder-product-card" data-product="wegovy">
+            <div class="reorder-product-image">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/wegovy-%281%29.jpg" alt="Wegovy injection pens" loading="eager" />
+            </div>
+            <div class="reorder-product-content">
+              <div class="reorder-product-header">
+                <h3>Continue with Wegovy</h3>
+                <span class="reorder-product-type">Semaglutide</span>
+              </div>
+              <p class="reorder-product-tagline">Continue your proven weight loss journey</p>
+              <div class="reorder-product-stats">
+                <div class="reorder-stat-item">
+                  <span class="stat-value">15%</span>
+                  <span class="stat-label">Avg. weight loss</span>
+                </div>
+                <div class="reorder-stat-divider"></div>
+                <div class="reorder-stat-item">
+                  <span class="stat-value">Weekly</span>
+                  <span class="stat-label">Injection</span>
+                </div>
+              </div>
+              <button class="cta-button gradient-cta full-width reorder-product-btn" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+                Reorder Wegovy
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+              </button>
+              <p class="reorder-product-price">From £149.99/month</p>
+            </div>
+          </article>
+          
+          <!-- Mounjaro Card -->
+          <article class="reorder-product-card" data-product="mounjaro">
+            <div class="reorder-product-image">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/mounjaro.jpg" alt="Mounjaro injection pen" loading="eager" />
+              <div class="reorder-product-badge">MOST POPULAR</div>
+            </div>
+            <div class="reorder-product-content">
+              <div class="reorder-product-header">
+                <h3>Continue with Mounjaro</h3>
+                <span class="reorder-product-type">Tirzepatide</span>
+              </div>
+              <p class="reorder-product-tagline">Maintain your momentum with Mounjaro</p>
+              <div class="reorder-product-stats">
+                <div class="reorder-stat-item">
+                  <span class="stat-value">20%</span>
+                  <span class="stat-label">Avg. weight loss</span>
+                </div>
+                <div class="reorder-stat-divider"></div>
+                <div class="reorder-stat-item">
+                  <span class="stat-value">Weekly</span>
+                  <span class="stat-label">Injection</span>
+                </div>
+              </div>
+              <button class="cta-button gradient-cta full-width reorder-product-btn" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+                Reorder Mounjaro
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+              </button>
+              <p class="reorder-product-price">From £229/month</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Indicators Bar -->
+    <section class="reorder-trust-bar">
+      <div class="section-container">
+        <div class="reorder-trust-grid">
+          <div class="reorder-trust-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="reorder-trust-text">
+              <span class="trust-title">5-minute clinical review</span>
+              <span class="trust-desc">Fast-tracked for existing patients</span>
+            </div>
+          </div>
+          
+          <div class="reorder-trust-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 16V12L16 14M21 10H3M21 6H3M21 14H3M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="reorder-trust-text">
+              <span class="trust-title">Tomorrow delivery</span>
+              <span class="trust-desc">Order by 2pm for next-day dispatch</span>
+            </div>
+          </div>
+          
+          <div class="reorder-trust-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <div class="reorder-trust-text">
+              <span class="trust-title">5,000+ patients helped</span>
+              <span class="trust-desc">Join our trusted community</span>
+            </div>
+          </div>
+          
+          <div class="reorder-trust-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="reorder-trust-text">
+              <span class="trust-title">Cancel anytime</span>
+              <span class="trust-desc">No long-term commitment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Reorder With Us Section -->
+    <section class="reorder-benefits-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">EXISTING PATIENT BENEFITS</span>
+          <h2>Why Reorder With Us</h2>
+          <div class="decorative-divider">
+            <span class="divider-line"></span>
+            <span class="divider-dot"></span>
+            <span class="divider-line"></span>
+          </div>
+          <p>Premium perks for our valued returning patients</p>
+        </div>
+        
+        <div class="reorder-benefits-grid">
+          <article class="reorder-benefit-card">
+            <div class="reorder-benefit-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Quick Reorder</h3>
+            <p>Simple and fast</p>
+            <span class="reorder-benefit-detail">Your details are saved securely. Just confirm and checkout.</span>
+          </article>
+          
+          <article class="reorder-benefit-card">
+            <div class="reorder-benefit-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 16V12L16 14M21 10H3M21 6H3M21 14H3M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Order by 2pm, ships today</p>
+            <span class="reorder-benefit-detail">Same-day dispatch with tracked Royal Mail delivery.</span>
+          </article>
+          
+          <article class="reorder-benefit-card">
+            <div class="reorder-benefit-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Expert Support</h3>
+            <p>Pharmacist team available</p>
+            <span class="reorder-benefit-detail">Contact our pharmacists for dosage adjustments or questions.</span>
+          </article>
+          
+          <article class="reorder-benefit-card">
+            <div class="reorder-benefit-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Flexible Options</h3>
+            <p>Pause or cancel anytime</p>
+            <span class="reorder-benefit-detail">No long-term commitments. Adjust your treatment as needed.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="reorder-testimonials-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">PATIENT STORIES</span>
+          <h2>What Our Patients Say</h2>
+          <div class="decorative-divider">
+            <span class="divider-line"></span>
+            <span class="divider-dot"></span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+        
+        <div class="reorder-testimonials-grid">
+          <article class="reorder-testimonial-card">
+            <div class="reorder-testimonial-stars">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/container-9.svg" alt="5 stars" />
+            </div>
+            <blockquote>"Reordering is so simple. My medication arrives like clockwork, and I never have to worry about running out. The SMS reminders are brilliant!"</blockquote>
+            <div class="reorder-testimonial-footer">
+              <div class="reorder-testimonial-author">
+                <div class="author-avatar">BM</div>
+                <div class="author-info">
+                  <span class="author-name">Bal M.</span>
+                  <span class="author-location">Birmingham</span>
+                </div>
+              </div>
+              <div class="reorder-testimonial-result">
+                <span class="result-number">-28 lbs</span>
+                <span class="result-time">8 months</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="reorder-testimonial-card">
+            <div class="reorder-testimonial-stars">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/container-9.svg" alt="5 stars" />
+            </div>
+            <blockquote>"The reorder process is seamless. I love that I can adjust my dose if needed and the pharmacist team is always available for questions."</blockquote>
+            <div class="reorder-testimonial-footer">
+              <div class="reorder-testimonial-author">
+                <div class="author-avatar">SK</div>
+                <div class="author-info">
+                  <span class="author-name">Sarah K.</span>
+                  <span class="author-location">London</span>
+                </div>
+              </div>
+              <div class="reorder-testimonial-result">
+                <span class="result-number">-35 lbs</span>
+                <span class="result-time">10 months</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="reorder-testimonial-card">
+            <div class="reorder-testimonial-stars">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/container-9.svg" alt="5 stars" />
+            </div>
+            <blockquote>"Best decision switching to Superior Pharmacy. The loyalty discount is a nice touch, and delivery is always on time. Highly recommend!"</blockquote>
+            <div class="reorder-testimonial-footer">
+              <div class="reorder-testimonial-author">
+                <div class="author-avatar">MR</div>
+                <div class="author-info">
+                  <span class="author-name">Michael R.</span>
+                  <span class="author-location">Manchester</span>
+                </div>
+              </div>
+              <div class="reorder-testimonial-result">
+                <span class="result-number">-42 lbs</span>
+                <span class="result-time">12 months</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support Banner -->
+    <section class="reorder-quick-actions-section">
+      <div class="section-container">
+        <div class="reorder-support-banner">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 16V12M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div class="reorder-support-text">
+            <span class="support-title">Need help with your reorder?</span>
+            <span class="support-desc">Our pharmacist team is available Monday-Friday 9am-6pm</span>
+          </div>
+          <a href="contact.html" class="reorder-support-link">Contact Support →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/cropped-superior-1.png" alt="Superior Pharmacy" class="footer-logo" />
+            <p class="footer-description">Superior Pharmacy provides online prescription weight loss services across the UK. GPhC registered and regulated.</p>
+            <div class="footer-address">
+              <p><strong>Registered Address:</strong></p>
+              <p>Superior Pharmacy<br />2A Hawes Close<br />Walsall, WS1 3HG<br />United Kingdom</p>
+            </div>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="weight-management.html">Weight Management</a></li>
+              <li><a href="wegovy.html">Wegovy</a></li>
+              <li><a href="mounjaro.html">Mounjaro</a></li>
+              <li><a href="#consultation">Online Consultation</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms & Conditions</a></li>
+              <li><a href="#complaints">Complaints Procedure</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-prescribers">
+          <h4>Our Prescribers</h4>
+          <p><strong>Superintendent Pharmacist:</strong> Raman Sangha (GPhC No.: 2085763)</p>
+          <p><strong>Clinical Lead:</strong> Resham Sira (GPhC No.: 2086835)</p>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Superior Pharmacy. All rights reserved. Registered with the General Pharmaceutical Council (GPhC).</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="reorder.js"></script>
+  </body>
+</html>
