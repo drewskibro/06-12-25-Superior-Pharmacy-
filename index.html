@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Superior Pharmacy - Medical Weight Loss</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gray0-white": "var(--gray0-white)",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-background"></div>
+      
+      <!-- Navigation -->
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+          <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/cropped-superior-1.png" alt="Superior Pharmacy Logo" class="logo" />
+          
+          <!-- Desktop Navigation -->
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="weight-management.html">Weight Management</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              Treatments
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </div>
+          <a href="health-hub.html">Health Hub</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+          
+        <button class="cta-button primary-cta desktop-cta" aria-label="Start your assessment" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+          Start Your Assessment
+          <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+        </button>
+          
+          <!-- Mobile Menu Button -->
+          <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+        <div class="mobile-menu-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="weight-management.html">Weight Management</a>
+          <details class="mobile-dropdown">
+            <summary>Treatments</summary>
+            <div class="mobile-dropdown-content">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </details>
+          <a href="health-hub.html">Health Hub</a>
+          <a href="contact.html">Contact Us</a>
+          <button class="cta-button primary-cta mobile-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+            Start Your Assessment
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Medical weight loss that works when diets have failed</h1>
+          <p class="hero-subtitle">
+            Lose up to 26% body weight with prescription treatments from UK prescribing pharmacists, delivered discreetly to your door.
+          </p>
+          <div class="hero-cta-wrapper">
+            <button class="cta-button gradient-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+              Start Your Assessment
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+            </button>
+            <p class="cta-subtext">✓ Free assessment • No commitment required</p>
+          </div>
+          
+          <div class="hero-trust-section">
+            <div class="hero-trust-stats">
+              <div class="trust-stat-item">
+                <span class="stat-number">5,000+</span>
+                <span class="stat-label">Patients helped</span>
+              </div>
+              <div class="trust-stat-divider"></div>
+              <div class="trust-stat-item">
+                <span class="stat-number">24hrs</span>
+                <span class="stat-label">Delivery time</span>
+              </div>
+              <div class="trust-stat-divider"></div>
+              <div class="trust-stat-item">
+                <div class="stat-rating">
+                  <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/link---4-0-2.svg" alt="5 stars" class="mini-stars" />
+                  <span class="stat-number">4.8</span>
+                </div>
+                <span class="stat-label">Excellent rating</span>
+              </div>
+            </div>
+            
+            <div class="hero-trust-badges">
+              <div class="trust-badge-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>GPhC Registered</span>
+              </div>
+              <div class="trust-badge-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Secure & Confidential</span>
+              </div>
+              <div class="trust-badge-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>UK Pharmacists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-cards">
+          <div class="hero-card card-1">
+            <div class="card-gradient gradient-1"></div>
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/undefined-i-need-only-this-gir--2--1-3.png" alt="Woman achieving weight goals" class="card-image" />
+            <div class="card-text">
+              <span class="card-subtitle">Achieve your long-term</span>
+              <span class="card-title">Weight goals</span>
+            </div>
+            <button class="card-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">See Treatments</button>
+          </div>
+          
+          <div class="hero-card card-2">
+            <div class="card-gradient gradient-2"></div>
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/undefined-i-need-only-this-men-1-1.png" alt="Man getting medical support" class="card-image" />
+            <div class="card-text">
+              <span class="card-subtitle">Get expert</span>
+              <span class="card-title">Medical support</span>
+            </div>
+            <button class="card-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">See Treatments</button>
+          </div>
+          
+          <div class="hero-card card-3">
+            <div class="card-gradient gradient-3"></div>
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/undefined-i-need-only-this-men--1--1-3.png" alt="Man showing weight loss results" class="card-image" />
+            <div class="card-text">
+              <span class="card-subtitle">See proven</span>
+              <span class="card-title">Weight loss results</span>
+            </div>
+            <button class="card-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">See Treatments</button>
+          </div>
+          
+          <div class="hero-card card-4">
+            <div class="card-gradient gradient-4"></div>
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/undefined-i-need-only-this-gir--1--1-3.png" alt="Woman starting treatment" class="card-image" />
+            <div class="card-text">
+              <span class="card-subtitle">Prescriptions approved</span>
+              <span class="card-title">Within 24 hours</span>
+            </div>
+            <button class="card-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">See Treatments</button>
+          </div>
+    </section>
+
+
+    <!-- Existing Customer Reorder Section - PREMIUM REDESIGN -->
+    <section class="reorder-section-premium">
+      <div class="section-container reorder-premium-container">
+        <div class="reorder-premium-content">
+          <div class="reorder-left">
+            <div class="reorder-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>EXISTING PATIENTS</span>
+            </div>
+            
+            <h2>Welcome back!<br />Ready to continue<br />your journey?</h2>
+            
+            <p class="reorder-description">You're doing amazing. Skip the hassle—your prescription is already on file. Get your next supply delivered within 24 hours and keep the momentum going.</p>
+            
+            <div class="reorder-benefits-list">
+              <div class="reorder-benefit-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <span class="benefit-title">Lightning Fast</span>
+                  <span class="benefit-desc">Reorder in under 60 seconds</span>
+                </div>
+              </div>
+              
+              <div class="reorder-benefit-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 16V12L16 14M21 10H3M21 6H3M21 14H3M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <span class="benefit-title">Same-Day Dispatch</span>
+                  <span class="benefit-desc">Order by 2pm, ships today</span>
+                </div>
+              </div>
+              
+              <div class="reorder-benefit-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <div>
+                  <span class="benefit-title">No Hassle</span>
+                  <span class="benefit-desc">Details saved & secure</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="reorder-stats-mini">
+              <div class="reorder-stat">
+                <span class="stat-num">2,847+</span>
+                <span class="stat-label">Patients trust us</span>
+              </div>
+              <div class="reorder-stat-divider"></div>
+              <div class="reorder-stat">
+                <span class="stat-num">98%</span>
+                <span class="stat-label">Reorder again</span>
+              </div>
+              <div class="reorder-stat-divider"></div>
+              <div class="reorder-stat">
+                <span class="stat-num">24hrs</span>
+                <span class="stat-label">Fast delivery</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="reorder-right">
+            <div class="reorder-card-wrapper">
+              <div class="reorder-card">
+                <div class="reorder-card-header">
+                  <h3>Reorder Process</h3>
+                  <span class="reorder-time-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                      <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Takes 2 minutes
+                  </span>
+                </div>
+                
+                <div class="reorder-medication-select">
+                  <label>Which medication are you reordering?</label>
+                  <div class="medication-options">
+                    <button class="medication-option active" data-medication="wegovy">
+                      <div class="med-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                      <span class="med-name">Wegovy</span>
+                      <span class="med-type">Semaglutide</span>
+                    </button>
+                    <button class="medication-option" data-medication="mounjaro">
+                      <div class="med-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                      <span class="med-name">Mounjaro</span>
+                      <span class="med-type">Tirzepatide</span>
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="reorder-process-steps">
+                  <div class="process-step">
+                    <div class="step-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="step-text">
+                      <span class="step-title">Quick Form</span>
+                      <span class="step-desc">Confirm your details</span>
+                    </div>
+                  </div>
+                  <div class="process-arrow">→</div>
+                  <div class="process-step">
+                    <div class="step-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                      </svg>
+                    </div>
+                    <div class="step-text">
+                      <span class="step-title">Pharmacist Review</span>
+                      <span class="step-desc">Prescription verified</span>
+                    </div>
+                  </div>
+                  <div class="process-arrow">→</div>
+                  <div class="process-step">
+                    <div class="step-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 16V12L16 14M21 10H3M21 6H3M21 14H3M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="step-text">
+                      <span class="step-title">Fast Delivery</span>
+                      <span class="step-desc">Within 24 hours</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <button class="cta-button gradient-cta full-width reorder-cta-main" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+                  Continue to Reorder Form
+                  <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+                </button>
+                
+                <p class="reorder-secure-note">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  Your prescription will be reviewed by our pharmacists
+                </p>
+              </div>
+              
+              <div class="reorder-testimonial-mini">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/a-candid-portrait-photograph-captures-a-_1v9tydt-q4a8zkkcges3oq_okka_i5rqsomobj6agmrxq.png" alt="Happy customer" class="testimonial-avatar-mini" />
+                <div class="testimonial-content-mini">
+                  <div class="testimonial-stars-mini">
+                    <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/link---4-0-2.svg" alt="5 stars" />
+                  </div>
+                  <p>"Reordering is so easy. My medication arrives like clockwork!"</p>
+                  <cite>— Bal, Birmingham</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Bar Section -->
+    <section class="benefits-bar-section">
+      <div class="benefits-bar-container">
+        <div class="benefit-box">
+          <div class="benefit-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="benefit-text-wrapper">
+            <h3>Fully Regulated</h3>
+            <p>Highest safety standards</p>
+          </div>
+        </div>
+
+        <div class="benefit-box">
+          <div class="benefit-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="benefit-text-wrapper">
+            <h3>UK Pharmacists</h3>
+            <p>Licensed experts</p>
+          </div>
+        </div>
+
+        <div class="benefit-box">
+          <div class="benefit-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="benefit-text-wrapper">
+            <h3>Fast Start</h3>
+            <p>Approved within 24 hours*</p>
+          </div>
+        </div>
+
+        <div class="benefit-box">
+          <div class="benefit-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="benefit-text-wrapper">
+            <h3>Discreet Delivery</h3>
+            <p>Royal Mail, plain packaging</p>
+          </div>
+        </div>
+      </div>
+      <p style="font-family: 'Nunito Sans', sans-serif; font-size: 0.875rem; font-weight: 600; color: #495565; text-align: center; margin-top: 1.5rem; max-width: 1280px; margin-left: auto; margin-right: auto;">*If eligible following consultation</p>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+      <div class="section-container">
+        <div class="testimonial-content">
+          <div class="testimonial-text">
+            <span class="section-label">LOVED BY OUR COMMUNITY</span>
+            <h2>Real transformation.<br />Real results.</h2>
+            <p>Join thousands of patients who have achieved lasting weight loss with our professional medical guidance and prescription solutions.</p>
+            <button class="cta-button gradient-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+              Start Your Assessment
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+            </button>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/container-2.svg" alt="" aria-hidden="true" />
+                <span class="stat-number">87%</span>
+                <span class="stat-label">Average Weight Loss</span>
+              </div>
+              <div class="stat-card">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/container-3.svg" alt="" aria-hidden="true" />
+                <span class="stat-number">6-12</span>
+                <span class="stat-label">Months to Goal</span>
+              </div>
+              <div class="stat-card">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/container-13.svg" alt="" aria-hidden="true" />
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Satisfaction Rate</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card-wrapper">
+            <div class="testimonial-avatar">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/a-candid-portrait-photograph-captures-a-_1v9tydt-q4a8zkkcges3oq_okka_i5rqsomobj6agmrxq.png" alt="Bal" />
+            </div>
+            <div class="testimonial-card">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/container-9.svg" alt="5 stars" class="testimonial-stars" />
+              <blockquote>
+                "Brilliant service from start to finish with Superior pharmacy. Each consultant was extremely knowledgeable, motivating and supportive. The phone app offered great diet advice and I’m ecstatic with my progress over the last 8 months."
+              </blockquote>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  <span class="author-name">Bal</span>
+                  <span class="verified-badge">Verified Client</span>
+                </div>
+                <div class="testimonial-result">
+                  <span class="result-number">-28 lbs</span>
+                  <span class="result-time">in 8 months</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="whats-included-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">COMPREHENSIVE CARE</span>
+          <h2>What's Included</h2>
+          <p>Complete medical weight loss services delivered by licensed professionals with proven expertise in prescription weight management.</p>
+        </div>
+        
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-image">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/hiw-3-v2_1.webp" alt="HelloFresh meal box with fresh ingredients" />
+            </div>
+            <div class="feature-card-content">
+              <h3>Nutritional Support</h3>
+              <p class="feature-description">Weekly articles by qualified nutritionists plus exclusive Hello Fresh discount code for healthy meals that meet your dietary requirements</p>
+            </div>
+          </article>
+          
+          <article class="feature-card">
+            <div class="feature-image">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/a-photograph-of-a-person-s-hands-holding_n1akmuawtxkml9kjg3mdnw_jjtqnkglsiamjggqgwv5kg_1.png" alt="Prescribe Me app on mobile device" />
+            </div>
+            <div class="feature-card-content">
+              <h3>Exclusive App Access</h3>
+              <p class="feature-description">Track progress, nutrition, and habits with the Prescribe Me app. Integrates with FitBit, Apple Health, and Google Health</p>
+            </div>
+          </article>
+          
+          <article class="feature-card">
+            <div class="feature-image">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/professional-pharmacist-consultation-for-weight-loss-treatment.png" alt="Professional pharmacist providing expert care" />
+            </div>
+            <div class="feature-card-content">
+              <h3>Expert Care</h3>
+              <p class="feature-description">CQC-registered prescribing service specialising in weight loss. Dedicated email support responds within 1 working day</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Timeline Section - COMPLETELY REDESIGNED -->
+    <section class="journey-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">YOUR JOURNEY</span>
+          <h2>What to Expect</h2>
+          <p>A clear path to lasting weight loss with professional support every step of the way.</p>
+        </div>
+        
+        <div class="journey-steps">
+          <!-- Step 1 -->
+          <div class="journey-step step-left">
+            <div class="step-image-wrapper">
+              <div class="step-number">1</div>
+              <div class="step-image">
+                <div class="step-gradient gradient-peach"></div>
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/undefined-i-need-only-this-gir--2--1-3.png" alt="Woman starting transformation" />
+              </div>
+            </div>
+            <div class="step-content">
+              <span class="step-label">TODAY</span>
+              <h3>Start Your Transformation</h3>
+              <ul class="step-list">
+                <li>Personalised meal plans tailored to your lifestyle</li>
+                <li>Simple habit-building techniques that stick</li>
+                <li>24/7 support from our expert community</li>
+              </ul>
+              <div class="step-testimonial">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/sarah-m--testimonial.png" alt="Sarah M." class="testimonial-avatar-small" />
+                <div>
+                  <p>"I never thought I could change my eating habits, but the personalised approach made it so much easier than I expected!"</p>
+                  <cite>— Sarah M.</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="step-connector"></div>
+
+          <!-- Step 2 -->
+          <div class="journey-step step-right">
+            <div class="step-content">
+              <span class="step-label">1–6 MONTHS</span>
+              <h3>Build Momentum</h3>
+              <ul class="step-list">
+                <li>Sustainable energy levels throughout the day</li>
+                <li>Noticeable improvements in strength and endurance</li>
+                <li>Clothes fitting better and confidence growing</li>
+              </ul>
+              <div class="step-testimonial">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/emma-r--testimonial.png" alt="Emma R." class="testimonial-avatar-small" />
+                <div>
+                  <p>"By month 3, I was running up stairs without getting winded. The energy boost has been life-changing!"</p>
+                  <cite>— Emma R.</cite>
+                </div>
+              </div>
+            </div>
+            <div class="step-image-wrapper">
+              <div class="step-number">2</div>
+              <div class="step-image">
+                <div class="step-gradient gradient-cyan"></div>
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/undefined-i-need-only-this-men--1--1-3.png" alt="Man building momentum" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="step-connector"></div>
+
+          <!-- Step 3 -->
+          <div class="journey-step step-left">
+            <div class="step-image-wrapper">
+              <div class="step-number">3</div>
+              <div class="step-image">
+                <div class="step-gradient gradient-peach"></div>
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/undefined-i-need-only-this-gir--1--1-3.png" alt="Woman achieving goals" />
+              </div>
+            </div>
+            <div class="step-content">
+              <span class="step-label">6–12 MONTHS</span>
+              <h3>Achieve Your Goals</h3>
+              <ul class="step-list">
+                <li>Reach your target weight with lasting results</li>
+                <li>Master mindful eating and intuitive food choices</li>
+                <li>Inspire others with your incredible transformation</li>
+              </ul>
+              <div class="step-testimonial">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/maya-k--testimonial.png" alt="Maya K." class="testimonial-avatar-small" />
+                <div>
+                  <p>"I've maintained my weight loss for over a year now. This isn't just a diet—it's a complete lifestyle transformation!"</p>
+                  <cite>— Maya K.</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+      <div class="section-container calculator-container">
+        <div class="calculator-info">
+          <h2>Calculate Your Weight Loss Journey</h2>
+          <p>Discover your personalised weight loss timeline with our medically-backed calculator. Get realistic expectations and professional guidance for sustainable results.</p>
+          <div class="calculator-image">
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/1000129504.jpg" alt="Bal's weight loss success" />
+            <div class="calculator-badge">
+              <p>"Lost 28 lbs in 8 months"</p>
+              <span>Bal, Verified Patient</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="calculator-widget">
+          <h3>Weight Loss Calculator</h3>
+          <p class="calculator-subtitle">Enter your starting weight to see your potential</p>
+          
+          <div class="unit-toggle">
+            <button class="unit-btn active" data-unit="kg">Kg</button>
+            <button class="unit-btn" data-unit="st">St</button>
+          </div>
+          
+          <div class="input-group">
+            <label for="weight-input">Starting Weight</label>
+            <div class="weight-input-wrapper">
+              <input type="number" id="weight-input" value="80" min="40" max="200" />
+              <span class="unit-label">kg</span>
+            </div>
+          </div>
+          
+          <div class="slider-group">
+            <input type="range" id="weight-slider" min="40" max="200" value="80" />
+            <div class="slider-labels">
+              <span>40kg</span>
+              <span>200kg</span>
+            </div>
+          </div>
+          
+          <div class="result-card">
+            <span class="result-label">You could lose</span>
+            <span class="result-value">18.1kg</span>
+            <span class="result-time">in 12 months</span>
+          </div>
+          
+          <button class="cta-button primary-cta full-width">
+            Start Your Transformation
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/i.svg" alt="" aria-hidden="true" />
+          </button>
+          
+          <p class="calculator-disclaimer">
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/frame.svg" alt="" aria-hidden="true" />
+            Results based on clinical studies and member data
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expert Team Section -->
+    <section class="experts-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">EXPERT TEAM</span>
+          <h2>Meet Our Medical Specialists</h2>
+          <p>Board-certified professionals dedicated to your weight loss success.</p>
+        </div>
+        
+        <div class="experts-wrapper">
+          <div class="experts-grid-centered">
+            <article class="expert-card">
+              <div class="expert-image">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/raman-sangha.png" alt="Raman Sangha" />
+                <div class="expert-gradient"></div>
+              </div>
+              <h3>Raman Sangha</h3>
+              <span class="expert-specialty">Clinical Lead</span>
+              <div class="expert-credentials">
+                <p>Pharmacist, Ind. Prescriber</p>
+                <p class="license">GPhC: 2085763</p>
+              </div>
+            </article>
+            
+            <article class="expert-card">
+              <div class="expert-image">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/resham-sira.png" alt="Resham Sira" />
+                <div class="expert-gradient"></div>
+              </div>
+              <h3>Resham Sira</h3>
+              <span class="expert-specialty">Clinical Lead</span>
+              <div class="expert-credentials">
+                <p>Pharmacist, Ind. Prescriber</p>
+                <p class="license">GPhC: 2086835</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        
+        <p class="experts-disclaimer">
+          All our independent prescribers are UK-registered and maintain current licensing and continuing education requirements with the General Pharmaceutical Council (GPhC) for your safety and peace of mind.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <span class="gphc-badge">
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg-21.svg" alt="" aria-hidden="true" />
+            GPhC Regulated
+          </span>
+          <p>Get answers to common questions about our medical weight loss programme from our licensed pharmacists and medical specialists.</p>
+        </div>
+        
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>
+              <span>What medications are used in your weight loss programme?</span>
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg.svg" alt="" aria-hidden="true" class="faq-icon" />
+            </summary>
+            <div class="faq-answer">
+              <p>Our licensed pharmacists prescribe MHRA-approved medications such as semaglutide, tirzepatide, and other clinically proven weight management treatments. Each prescription is tailored to your individual health profile and medical history after a comprehensive consultation.</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary>
+              <span>How quickly will I see results?</span>
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg.svg" alt="" aria-hidden="true" class="faq-icon" />
+            </summary>
+            <div class="faq-answer">
+              <p>Most patients begin to see weight loss within the first 2-4 weeks of treatment. However, results vary based on individual factors including starting weight, adherence to the programme, and lifestyle changes. Significant results typically become visible within 8-12 weeks.</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary>
+              <span>How do I get started with treatment?</span>
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg.svg" alt="" aria-hidden="true" class="faq-icon" />
+            </summary>
+            <div class="faq-answer">
+              <p>Complete our eligibility checker, then pay £10 to book a video consultation at a convenient time. If treatment is approved during your consultation, your prescription is issued instantly and medication is dispatched for delivery.</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary>
+              <span>How quickly will I receive my medication?</span>
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg.svg" alt="" aria-hidden="true" class="faq-icon" />
+            </summary>
+            <div class="faq-answer">
+              <p>Your medication is delivered within 48 hours of prescription approval. All deliveries are sent via Royal Mail Tracked 24, which aims to deliver within 24 hours (though this is not guaranteed). All medication arrives in discreet packaging that maintains the cold chain.</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary>
+              <span>Are there any side effects I should be aware of?</span>
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg.svg" alt="" aria-hidden="true" class="faq-icon" />
+            </summary>
+            <div class="faq-answer">
+              <p>Common side effects may include mild nausea, digestive changes, and appetite reduction - these usually improve as your body adjusts. Your pharmacist will discuss all potential side effects during your consultation and provide management strategies.</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary>
+              <span>How often will I need to check in with the pharmacist?</span>
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg.svg" alt="" aria-hidden="true" class="faq-icon" />
+            </summary>
+            <div class="faq-answer">
+              <p>You'll have clinical oversight by our prescribing pharmacists throughout your journey. The frequency of check-ins is tailored to your individual needs, ensuring you receive the right level of support and monitoring for safe, effective treatment.</p>
+            </div>
+          </details>
+        </div>
+        
+        <div class="faq-cta">
+          <p>Have more questions? Our medical team is here to help.</p>
+          <button class="cta-button gradient-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+            Start Your Assessment
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Removed Health Hub Section from here -->
+
+    <!-- Success Stories Section -->
+    <section class="success-stories-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Real Success Stories</h2>
+          <p>Real patients, real transformations. See how our medical weight loss program has helped patients achieve lasting results with professional pharmaceutical guidance.</p>
+        </div>
+        
+        <div class="stories-grid">
+          <article class="story-card">
+            <div class="story-images">
+              <div class="story-image before">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/untitled-design-2025-11-11t134650-301.png" alt="James before weight loss" />
+                <span class="image-label before-label">Before</span>
+              </div>
+              <div class="story-image after">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/untitled-design-2025-11-11t134442-174.png" alt="James after weight loss" />
+                <span class="image-label after-label">After · 6 months</span>
+              </div>
+            </div>
+            <div class="story-content">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/container-9.svg" alt="5 stars" class="story-stars" />
+              <blockquote>"I reached out to Superior pharmacy after gaining a significant amount of weight due to various life challenges. I felt supported and motivated after the initial video call and had all my questions answered by the Pharmacist. They explained to importance of good diet and exercise. My initial weight loss progress encouraged me to get back into the gym and now a year and a half and many gym session later, I'm ecstatic with the results. 10/10 experience!"</blockquote>
+              <div class="story-results">
+                <h4>Key Results:</h4>
+                <ul>
+                  <li><img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg-4.svg" alt="" aria-hidden="true" />Lost 40 lbs</li>
+                  <li><img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg-4.svg" alt="" aria-hidden="true" />Back in the gym</li>
+                  <li><img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg-4.svg" alt="" aria-hidden="true" />Sustained results</li>
+                </ul>
+              </div>
+              <div class="story-footer">
+                <div class="story-author">
+                  <span class="author-name">James</span>
+                  <span class="author-location">London</span>
+                </div>
+                <div class="story-result">
+                  <span class="result-number">-40 lbs</span>
+                  <span class="result-time">6 months</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <article class="story-card">
+            <div class="story-images">
+              <div class="story-image before">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/1000129503.jpg" alt="Bal before weight loss" />
+                <span class="image-label before-label">Before</span>
+              </div>
+              <div class="story-image after">
+                <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/1000129504.jpg" alt="Bal after weight loss" />
+                <span class="image-label after-label">After · 8 months</span>
+              </div>
+            </div>
+            <div class="story-content">
+              <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/container-9.svg" alt="5 stars" class="story-stars" />
+              <blockquote>"Brilliant service from start to finish with Superior pharmacy. Each consultant was extremely knowledgeable, motivating and supportive. The phone app offered great diet advice and I'm ecstatic with my progress over the last 8 months."</blockquote>
+              <div class="story-results">
+                <h4>Key Results:</h4>
+                <ul>
+                  <li><img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg-4.svg" alt="" aria-hidden="true" />Lost 28 lbs</li>
+                  <li><img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg-4.svg" alt="" aria-hidden="true" />Improved diet habits</li>
+                  <li><img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/svg-4.svg" alt="" aria-hidden="true" />Increased motivation</li>
+                </ul>
+              </div>
+              <div class="story-footer">
+                <div class="story-author">
+                  <span class="author-name">Bal</span>
+                  <span class="author-location">Birmingham</span>
+                </div>
+                <div class="story-result">
+                  <span class="result-number">-28 lbs</span>
+                  <span class="result-time">8 months</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <div class="stories-cta">
+          <h3>Ready to Write Your Success Story?</h3>
+          <p>Join hundreds of patients who have transformed their lives with our medically-supervised weight loss program.</p>
+          
+          <button class="cta-button gradient-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+            Start Your Assessment
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+          
+          <p class="cta-subtext">✓ Free assessment • No commitment required</p>
+          
+          <div class="stories-trust-badges">
+            <div class="stories-trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>GPhC Registered</span>
+            </div>
+            <div class="stories-trust-divider"></div>
+            <div class="stories-trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2"/>
+            </svg>
+              <span>100% Confidential</span>
+            </div>
+            <div class="stories-trust-divider"></div>
+            <div class="stories-trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 16V12L16 14M21 10H3M21 6H3M21 14H3M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>24-Hour Delivery (if eligible)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <img src="https://c.animaapp.com/mid2gmlt3yvxc2/img/cropped-superior-1.png" alt="Superior Pharmacy" class="footer-logo" />
+            <p class="footer-description">Superior Pharmacy provides online prescription weight loss services across the UK. GPhC registered and regulated.</p>
+            <div class="footer-address">
+              <p><strong>Registered Address:</strong></p>
+              <p>Superior Pharmacy<br />2A Hawes Close<br />Walsall, WS1 3HG<br />United Kingdom</p>
+            </div>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="weight-management.html">Weight Management</a></li>
+              <li><a href="#wegovy">Wegovy</a></li>
+              <li><a href="#mounjaro">Mounjaro</a></li>
+              <li><a href="#consultation">Online Consultation</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms & Conditions</a></li>
+              <li><a href="#complaints">Complaints Procedure</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-prescribers">
+          <h4>Our Prescribers</h4>
+          <p><strong>Superintendent Pharmacist:</strong> Raman Sangha (GPhC No.: 2085763)</p>
+          <p><strong>Clinical Lead:</strong> Resham Sira (GPhC No.: 2086835)</p>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Superior Pharmacy. All rights reserved. Registered with the General Pharmaceutical Council (GPhC).</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

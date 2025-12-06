@@ -1,0 +1,759 @@
+/* ===================================
+   HEALTH HUB PAGE STYLES
+   =================================== */
+
+/* Hero Section - Journey Tracker */
+.health-hub-hero-section {
+  background: linear-gradient(180deg, #eceae7 0%, #f5f3f0 100%);
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.health-hub-hero-section::before {
+  content: '';
+  position: absolute;
+  right: -100%;
+  bottom: -50%;
+  width: 200%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(231, 206, 107, 0.39) 0%, transparent 38%);
+  pointer-events: none;
+  animation: floatGradient 20s ease-in-out infinite;
+}
+
+.health-hub-hero-section::after {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: -50%;
+  width: 120%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 151, 178, 0.24) 0%, transparent 38%);
+  pointer-events: none;
+  animation: floatGradient 25s ease-in-out infinite reverse;
+}
+
+@keyframes floatGradient {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, -30px) scale(1.05);
+  }
+}
+
+.health-hub-hero-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.health-hub-hero-container .section-label {
+  display: inline-block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-teal);
+  margin-bottom: 1.5rem;
+}
+
+.health-hub-hero-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 1.15;
+  color: var(--text-dark);
+  margin: 0 auto 1.25rem;
+  max-width: 56.25rem;
+  letter-spacing: -0.01em;
+}
+
+.health-hub-hero-container .hero-subtitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--text-gray);
+  margin: 0 auto 2.5rem;
+  max-width: 50rem;
+  font-weight: 400;
+}
+
+.journey-tracker-wrapper {
+  background: var(--white);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.journey-tracker-stages {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stage-button {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.75rem 1rem;
+  background: var(--bg-cream);
+  border: 1px solid var(--border-light);
+  border-radius: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stage-button:hover {
+  background: rgba(0, 150, 137, 0.05);
+  border-color: var(--primary-teal);
+}
+
+.stage-button.active {
+  background: var(--primary-teal);
+  color: var(--white);
+  border-color: var(--primary-teal);
+  box-shadow: 0 4px 12px rgba(0, 150, 137, 0.2);
+}
+
+.progress-visualization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-cream);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%; /* Controlled by JS */
+  background: linear-gradient(90deg, var(--primary-teal) 0%, #00b5a4 100%);
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-milestones {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5px; /* Adjust padding to align dots with bar ends */
+}
+
+.milestone {
+  width: 12px;
+  height: 12px;
+  background: var(--border-light);
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.milestone.active {
+  background: var(--primary-teal);
+  box-shadow: 0 0 0 4px rgba(0, 150, 137, 0.2);
+}
+
+/* Real-Time Support Ticker */
+.real-time-support-section {
+  background: var(--bg-cream);
+  padding: 2rem 2rem;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  overflow: hidden;
+}
+
+.real-time-support-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.real-time-ticker {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden; /* Hide content outside the wrapper */
+  position: relative;
+}
+
+.ticker-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--primary-teal);
+  text-transform: uppercase;
+  flex-shrink: 0; /* Prevent label from shrinking */
+  margin-right: 1.5rem; /* Space between label and scrolling messages */
+}
+
+.ticker-messages-wrapper {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.ticker-messages {
+  display: flex;
+  animation: ticker-scroll 20s linear infinite; /* CSS animation for continuous scroll */
+  /* Ensure enough width for content to scroll */
+  width: max-content; /* Allow content to define width */
+}
+
+.ticker-message {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+  margin-right: 3rem; /* Space between messages */
+  flex-shrink: 0; /* Ensure messages don't shrink */
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); } /* Scroll half the content width to loop seamlessly */
+}
+
+
+/* Content Presentation - Story Feed */
+.story-feed-section {
+  background: var(--white);
+  padding: 4rem 2rem;
+}
+
+.story-feed-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.story-feed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(250px, auto); /* Allow rows to grow, but have a min height */
+  grid-auto-flow: dense; /* Fill in gaps */
+  gap: 2rem;
+}
+
+.story-card {
+  background: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* More pronounced shadow */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08); /* Subtle border */
+  position: relative; /* For absolute positioning of nav buttons */
+}
+
+.story-card:hover {
+  transform: translateY(-6px); /* Slight lift */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+/* Dynamic Layouts */
+.story-card-large {
+  grid-column: span 2; /* Make it span two columns */
+  grid-row: span 2; /* Make it span two rows, adjust as needed */
+  min-height: 400px; /* Ensure it's visibly larger */
+  background: linear-gradient(135deg, #fef5f0 0%, #fff8f5 100%); /* Distinct background for large card */
+}
+
+.story-card-large .story-image {
+  height: 200px; /* Example height for large card image */
+  width: 100%;
+  overflow: hidden;
+}
+
+.story-card-large .story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.story-card-large:hover .story-image img {
+  transform: scale(1.05);
+}
+
+.story-card-large .story-content h3 {
+  font-size: 2rem; /* Larger title for large card */
+}
+
+.story-card-large .story-content p {
+  font-size: 1.0625rem;
+}
+
+
+.story-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Subtle border */
+}
+
+.story-category {
+  display: inline-block;
+  padding: 0.4rem 0.8rem; /* Slightly more padding */
+  background: linear-gradient(135deg, rgba(0, 150, 137, 0.1) 0%, rgba(0, 181, 164, 0.05) 100%); /* Subtle gradient */
+  border-radius: 1.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700; /* Bolder */
+  font-size: 0.8125rem; /* Slightly larger */
+  color: var(--primary-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* More spaced out */
+}
+
+.save-journey-btn {
+  background: none;
+  border: none;
+  color: var(--text-gray);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.save-journey-btn:hover {
+  background: var(--bg-cream);
+  color: var(--primary-teal);
+  transform: scale(1.1);
+}
+
+.save-journey-btn.saved {
+  color: var(--primary-teal);
+  background: rgba(0, 150, 137, 0.15); /* More distinct saved state */
+}
+
+.save-journey-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Quick Tip Specific Styles */
+.story-card-quick-tip {
+  background: linear-gradient(135deg, rgba(150, 240, 255, 0.08) 0%, rgba(150, 240, 255, 0.04) 100%), var(--white); /* Distinct background */
+}
+
+.story-progress-indicator {
+  position: absolute;
+  top: 0.75rem; /* Positioned at the top of the card, inside padding */
+  left: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 0.25rem;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.1); /* Darker background for contrast */
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: 5; /* Ensure it's above content */
+}
+
+.progress-dot {
+  flex-grow: 1;
+  background: var(--border-light);
+  border-radius: 1px;
+  transition: background 0.3s ease;
+}
+
+.progress-dot.active {
+  background: var(--primary-teal);
+}
+
+.story-frames {
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden; /* Hide frames that are not active */
+}
+
+.story-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(100%); /* Start off-screen to the right */
+  padding-top: 1.5rem; /* Adjust padding to account for progress indicator */
+}
+
+.story-frame.active {
+  opacity: 1;
+  transform: translateX(0%);
+  position: relative; /* Bring active frame into flow */
+}
+
+.story-frame.prev-active {
+  transform: translateX(-100%); /* Move previous active frame off-screen to the left */
+}
+
+.story-frame .story-content {
+  flex-grow: 1;
+}
+
+.story-frame .story-footer {
+  border-top: none; /* Footer is part of the frame, not the card */
+  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 1.5rem; /* Match card padding */
+  padding-right: 1.5rem; /* Match card padding */
+}
+
+.frame-nav-btn {
+  background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+  border: none;
+  border-radius: 50%;
+  width: 36px; /* Larger touch target */
+  height: 36px; /* Larger touch target */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+  position: absolute; /* Position over the card content */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure it's clickable */
+  opacity: 0; /* Hidden by default */
+}
+
+.story-card-quick-tip:hover .frame-nav-btn {
+  opacity: 1; /* Show on card hover */
+}
+
+.frame-nav-btn.prev {
+  left: 0.5rem; /* Position on left edge */
+}
+
+.frame-nav-btn.next {
+  right: 0.5rem; /* Position on right edge */
+}
+
+.frame-nav-btn:hover {
+  background: var(--primary-teal); /* Solid color on hover */
+  transform: translateY(-50%) scale(1.1); /* Pop effect */
+}
+
+.frame-nav-btn svg {
+  width: 1.25rem; /* Larger icon */
+  height: 1.25rem; /* Larger icon */
+  color: var(--text-dark); /* Default icon color */
+}
+
+.frame-nav-btn:hover svg {
+  color: var(--white); /* White icon on hover */
+}
+
+
+.story-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.story-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.story-content p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+}
+
+.story-footer {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.read-time {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+}
+
+.story-link {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--primary-teal);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.story-link:hover {
+  color: #007d72;
+  text-decoration: underline;
+}
+
+/* Specific Story Card Types */
+.story-card-quick-tip {
+  background: linear-gradient(135deg, rgba(150, 240, 255, 0.08) 0%, rgba(150, 240, 255, 0.04) 100%), var(--white);
+}
+
+.story-card-success-story {
+  background: linear-gradient(135deg, rgba(255, 161, 120, 0.08) 0%, rgba(255, 161, 120, 0.04) 100%), var(--white);
+}
+
+.story-image-slider {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  overflow: hidden;
+}
+
+.slider-before, .slider-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-before img, .slider-after img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-before span, .slider-after span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+}
+
+.slider-after {
+  width: 50%; /* Initial state */
+}
+
+.slider-after span {
+  background: var(--primary-teal);
+}
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 20px;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: ew-resize;
+}
+
+.slider-control::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: var(--white);
+  border: 2px solid var(--primary-teal);
+  border-radius: 50%;
+  cursor: ew-resize;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider-control::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: var(--white);
+  border: 2px solid var(--primary-teal);
+  border-radius: 50%;
+  cursor: ew-resize;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.story-card-video {
+  background: linear-gradient(135deg, rgba(0, 150, 137, 0.08) 0%, rgba(0, 150, 137, 0.04) 100%), var(--white);
+}
+
+.story-video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.story-video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.story-card-calculator {
+  background: linear-gradient(135deg, rgba(231, 206, 107, 0.08) 0%, rgba(231, 206, 107, 0.04) 100%), var(--white);
+}
+
+.calculator-widget-embed {
+  background: var(--bg-cream);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.calculator-widget-embed label {
+  display: block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.calculator-widget-embed input[type="number"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.calculator-widget-embed p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.calculator-widget-embed .small-cta {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+#load-more-stories {
+  display: block;
+  margin: 3rem auto 0;
+  width: fit-content;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .health-hub-hero-container h1 {
+    font-size: 3rem;
+  }
+  .health-hub-hero-container .hero-subtitle {
+    font-size: 1.125rem;
+  }
+  .journey-tracker-wrapper {
+    padding: 1.5rem;
+  }
+  .stage-button {
+    font-size: 0.875rem;
+    min-width: 100px;
+  }
+  .story-feed-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .story-card-large {
+    grid-column: span 1; /* On smaller screens, large cards become single column */
+    grid-row: span 1;
+    min-height: auto;
+  }
+  .story-card-large .story-image {
+    height: 150px; /* Adjust image height for smaller large cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .health-hub-hero-section {
+    padding: 6rem 1.5rem 3rem;
+  }
+  .health-hub-hero-container h1 {
+    font-size: 2.25rem;
+  }
+  .health-hub-hero-container .hero-subtitle {
+    font-size: 1rem;
+  }
+  .journey-tracker-stages {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .stage-button {
+    width: 100%;
+  }
+  .real-time-ticker {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .ticker-label {
+    font-size: 0.8125rem;
+  }
+  .ticker-messages {
+    font-size: 0.875rem;
+    margin-right: 1.5rem;
+  }
+  .story-feed-grid {
+    grid-template-columns: 1fr;
+  }
+  .story-card {
+    padding: 1.25rem;
+  }
+  .story-content h3 {
+    font-size: 1.25rem;
+  }
+  .story-content p {
+    font-size: 0.875rem;
+  }
+  .story-footer {
+    padding: 1.25rem;
+  }
+  .story-card-large {
+    grid-column: span 1;
+    grid-row: span 1;
+    min-height: auto;
+  }
+  .story-card-large .story-image {
+    height: 120px;
+  }
+}
