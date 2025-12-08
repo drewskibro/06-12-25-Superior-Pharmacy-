@@ -4574,8 +4574,9 @@ width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.875rem;
-  padding: 2rem 1.5rem;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2.5rem 2rem;
   background: var(--bg-cream);
   border: 2px solid var(--border-light);
   border-radius: 1.5rem;
@@ -4583,6 +4584,7 @@ width: 100%;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  min-height: 10rem;
 }
 
 /* Animated gradient on hover - ONLY when NOT active */
@@ -4648,7 +4650,89 @@ width: 100%;
   }
 }
 
-.med-icon {
+.med-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: var(--text-dark);
+  position: relative;
+  z-index: 1;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.med-type {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.125rem;
+  color: var(--text-gray);
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.med-dosing {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  margin-top: 0.25rem;
+}
+
+.reorder-process-steps {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 2.5rem;
+  border: none;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  flex: 1;
+  padding: 2rem 1.5rem;
+  background: var(--white);
+  border: 2px solid var(--border-light);
+  border-radius: 1.25rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.process-step:hover {
+  border-color: var(--primary-teal);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 150, 137, 0.15);
+}
+
+.step-number {
+  position: absolute;
+  top: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--primary-teal);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 8px rgba(0, 150, 137, 0.3);
+}
+
+.step-icon {
   width: 3.5rem;
   height: 3.5rem;
   background: linear-gradient(135deg, rgba(0, 150, 137, 0.1) 0%, rgba(0, 181, 164, 0.15) 100%);
@@ -4656,135 +4740,63 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   transition: all 0.3s ease;
-  position: relative;
-  z-index: 1;
 }
 
-/* CRITICAL: Use data attribute for icon hover */
-.medication-option[data-active="false"]:hover .med-icon {
-  background: linear-gradient(135deg, var(--primary-teal) 0%, #00b5a4 100%) !important;
-  transform: scale(1.1) rotate(5deg);
+.process-step:hover .step-icon {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, #00b5a4 100%);
+  transform: scale(1.1);
 }
 
-/* Active state - stays green */
-.medication-option[data-active="true"] .med-icon,
-.medication-option.active .med-icon {
-  background: linear-gradient(135deg, var(--primary-teal) 0%, #00b5a4 100%) !important;
-  transform: none !important;
-}
-
-/* CRITICAL: Lock active icon completely */
-.medication-option[data-active="true"]:hover .med-icon,
-.medication-option.active:hover .med-icon {
-  background: linear-gradient(135deg, var(--primary-teal) 0%, #00b5a4 100%) !important;
-  transform: none !important;
-}
-
-.med-icon svg {
+.step-icon svg {
   width: 1.75rem;
   height: 1.75rem;
   color: var(--primary-teal);
   transition: color 0.3s ease;
 }
 
-/* CRITICAL: Icon color changes */
-.medication-option[data-active="false"]:hover .med-icon svg {
-  color: var(--white) !important;
-}
-
-.medication-option[data-active="true"] .med-icon svg,
-.medication-option.active .med-icon svg {
-  color: var(--white) !important;
-}
-
-.medication-option[data-active="true"]:hover .med-icon svg,
-.medication-option.active:hover .med-icon svg {
-  color: var(--white) !important;
-}
-
-.med-name {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 1.625rem;
-  color: var(--text-dark);
-  position: relative;
-  z-index: 1;
-}
-
-.med-type {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.9375rem;
-  color: var(--text-gray);
-  font-weight: 600;
-  position: relative;
-  z-index: 1;
-}
-
-.reorder-process-steps {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  padding: 1.75rem;
-  background: linear-gradient(135deg, rgba(0, 150, 137, 0.05) 0%, rgba(0, 181, 164, 0.08) 100%);
-  border-radius: 1.25rem;
-  margin-bottom: 2rem;
-  border: 1px solid rgba(0, 150, 137, 0.15);
-}
-
-.process-step {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex: 1;
-}
-
-.step-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  background: var(--white);
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 150, 137, 0.15);
-}
-
-.step-icon svg {
-  width: 1.25rem;
-  height: 1.25rem;
-  color: var(--primary-teal);
+.process-step:hover .step-icon svg {
+  color: var(--white);
 }
 
 .step-text {
   display: flex;
   flex-direction: column;
-  gap: 0.125rem;
+  gap: 0.375rem;
 }
 
 .step-title {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   color: var(--text-dark);
   line-height: 1.2;
 }
 
 .step-desc {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--text-gray);
   font-weight: 500;
+  line-height: 1.3;
 }
 
 .process-arrow {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.25rem;
-  color: var(--primary-teal);
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+  width: 2.5rem;
+  color: var(--primary-teal);
+  margin: 0 -1rem;
+  z-index: 1;
+}
+
+.process-arrow svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.5;
 }
 
 .reorder-cta-main {
@@ -5085,42 +5097,53 @@ width: 100%;
   
   .medication-option {
     padding: 2rem 1.5rem;
-  }
-  
-  .med-icon {
-    width: 4rem;
-    height: 4rem;
-  }
-  
-  .med-icon svg {
-    width: 2rem;
-    height: 2rem;
+    min-height: 9rem;
   }
   
   .med-name {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
   
   .med-type {
     font-size: 1rem;
   }
   
+  .med-dosing {
+    font-size: 0.8125rem;
+  }
+  
   .reorder-process-steps {
     flex-direction: column;
-    gap: 1.25rem;
-    padding: 2rem 1.5rem;
-    align-items: stretch; /* Allow steps to fill width */
+    gap: 1.5rem;
+    padding: 0;
+    align-items: stretch;
   }
   
   .process-arrow {
     transform: rotate(90deg);
-    font-size: 1.5rem;
-    align-self: center; /* Center only the arrow */
+    width: auto;
+    height: 2rem;
+    margin: -0.5rem 0;
+    align-self: center;
+  }
+  
+  .process-arrow svg {
+    width: 1.25rem;
+    height: 1.25rem;
   }
   
   .process-step {
     width: 100%;
-    justify-content: flex-start; /* Left-align the step content */
+    flex-direction: row;
+    text-align: left;
+    padding: 1.5rem;
+    gap: 1.25rem;
+  }
+  
+  .step-number {
+    position: static;
+    transform: none;
+    margin-right: 0;
   }
   
   .step-icon {
@@ -5133,8 +5156,12 @@ width: 100%;
     height: 1.5rem;
   }
   
+  .step-text {
+    align-items: flex-start;
+  }
+  
   .step-title {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   
   .step-desc {
